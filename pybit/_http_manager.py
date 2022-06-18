@@ -20,7 +20,7 @@ except ImportError:
 class _HTTPManager:
     def __init__(self, endpoint=None, api_key=None, api_secret=None,
                  logging_level=logging.INFO, log_requests=False,
-                 request_timeout=10, recv_window=5000, force_retry=False,
+                 request_timeout=10, recv_window=5000, force_retry=True,
                  retry_codes=None, ignore_codes=None, max_retries=3,
                  retry_delay=3, referral_id=None, record_request_time=False):
         """Initializes the HTTP class."""
